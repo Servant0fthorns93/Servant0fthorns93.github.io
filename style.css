@@ -28,11 +28,14 @@ img{
 	height: 100px;
 	width: 200px;
 }
+
+table{
+	table-layout: fixed;
+}
 table,td{
 	padding: 10px;
 	border: 1px solid black;
 	border-collapse: collapse;
-	table-layout:fixed;
 	overflow: hidden;
 }
 
