@@ -24,9 +24,10 @@ a{
 	color: #0123ba;
 }
 
-img{
-	height: 100px;
-	width: 200px;
+table{
+	table-layout: fixed;
+	width: 400px;
+	wordwrap:break-word;
 }
 table,td{
 	padding: 10px;
@@ -34,27 +35,6 @@ table,td{
 	border-collapse: collapse;
 }
 
-.designb{
-	border-collapse: collapse;
-	border: 1px solid black;
-}
-.designb td{
-	border-bottom: 1px solid black;
-	width: 200px;
-}
-.designb h4{
-	margin-top: 0px;
-	margin-bottom: 10px;
-}
-
-.master td{
-	padding: 10px;
-	border: 1px solid black;
-}
-.master{
-	border-collapse: collapse;
-	border: 1px solid black;
-}
 .header{
 	font-weight: heavy;
 	background-color: #ccdfff;
