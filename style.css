@@ -26,15 +26,13 @@ a{
 
 table{
 	table-layout: fixed;
-	width: 400px;
-	wordwrap:break-word;
+	width: 650px;
 }
 table,td{
 	padding: 10px;
 	border: 1px solid black;
 	border-collapse: collapse;
 }
-
 .header{
 	font-weight: heavy;
 	background-color: #ccdfff;
