@@ -24,17 +24,15 @@ a{
 	color: #0123ba;
 }
 
-img{
-	height: 100px;
-	width: 200px;
-}
 
 table,td{
 	padding: 10px;
 	border: 1px solid black;
 	border-collapse: collapse;
 }
-
+table,tr{
+	width: 700px;
+}
 .header{
 	font-weight: heavy;
 	background-color: #ccdfff;
