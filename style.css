@@ -29,11 +29,14 @@ img{
 	width: 200px;
 }
 
+table{
+	table-layout: fixed;
+	width:750px;
+}
 table,td{
 	padding: 10px;
 	border: 1px solid black;
 	border-collapse: collapse;
-	overflow: hidden;
 }
 
 .header{
