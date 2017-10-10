@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<title> Product Demo </title>
+<head>
+	<!-- W3 School Script for filter/search -->
+	<script src="https://www.w3schools.com//lib/w3.js"></script>
+	<!-- My CSS -->
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+	<body>
+	<h1>&nbsp; Product Catalog</h1>
+	<p> Hello everyone! Thank you for taking the time to look at this. Below are samples of how I am planning on creating a product catalog for our department. </p>
+	<p> The key information for looking for parts, I believe, are Part Number, Type (such as cable, monitor, terminal, etc), and a small description of the part with how it is 
+	written on orders and the types of installs that the part is used for. I did not include pictures due to loading time. When you have thousands and thousands of pictures trying to load at once not only will 
+	take forever to get everythingn loaded, but also will make the search function take longer and possible cash the page. I have linked the picture to the part number. Click on a part number to see the picture. </p>
+	<p> After looking at all of these and play around with the search, please fill out this <a href="https://www.surveymonkey.com/r/Q2SNTYG" target="blank" title="Feedback Survey">survey</a> for feedback about anything. </p>
+	
+	<h1>&nbsp; Multiple Tables </h1>
+	In a web-based format, the Product Catalog is going to have links for each concept. Instead of creating a master table, breaking the list up by concept will help filtering the list
+	and helps on a editing side as well. So, there will be a basic welcome page that describes the purpose of the webpages (helping us look up parts and learning equipment) and how to use it with
+	at least 7 seperate links for our concepts. At this time, I don't have an idea for items that are used in all concepts.
+		<ul style="margin:0px;">
+			<li> McDonalds </li>
+			<li> Taco Bell </li>
+			<li> KFC </li>
+			<li> Pizza Hut </li>
+			<li> CKE </li>
+			<li> Brink </li>
+			<li> Other (Heritage) </li>
+		</ul>
+	As Brink grows, we can seperate the main link into the individual ones. I would like to keep all links to the lists on the main page to minimize the number of clicks it takes to get you where
+	you need to find what you're looking for; so to get to, let's say, a piece for a Five Guys, all you have to click is the Brink list and you and search by "five guys." 
+	<br><br>
+	Try some of these in your searches!
+		<ul style="margin:0px;">
+			<li>Equipment in SSGP installs for McDonalds</li>
+			<li>Video brackets</li>
+			<li>Five Guys equipment in Brink</li>
+		</ul>
+	
+	<h3>&nbsp; McDonalds</h3>
+	<input oninput="w3.filterHTML('.md', '.item', this.value)" placeholder="Search McDonalds......">
+	<br>
+	&nbsp;
+	<table class="md">
+		<tbody>
+			<tr class="header" style="font-weight:bold;">
+				<td style="width:100px;">
+				Part Number
+				</td>
+				<td style="width:50px;">
+				Type
+				</td>
+				<td style="width:300px;">
+				Description
+				</td>
+			</tr>
+			<tr class="item">
+				<td>
+					<a href="red-panda.jpg" target="blank"> M3705 </a>
+				</td>
+				<td>
+					Monitor
+				</td>
+				<td>
+					7" Display MCD 
+					<br>7" ViewSonic monitor used as display for orders on the line. Typically will have a KVS Controller hooked up to it.
+				</td>
+			</tr>
+			<tr class="item">
+				<td>
+					<a href="red-panda.jpg" target="blank"> M3900-05R </a>
+				</td>
+				<td>
+					Printer
+				</td>
+				<td>
+					Ithaca (Transact) RC 
+					<br>Used in SSGP installs - printer that is installed next to grills to printer orders after they have been entered.
+				</td>
+			</tr>
+			<tr class="item">
+				<td>
+					<a href="red-panda.jpg"> 467031002 </a>
+				</td>
+				<td>
+					Cable
+				</td>
+				<td>
+					50' CAT5E Patch Yellow
+					<br>Cat5 cable used to connect devices such as video controllers and registers to the store's network. Colored to McDonalds' specification.
+				</td>
+			</tr>
+			<tr class="item">
+				<td>
+					<a href="red-panda.jpg" target="blank"> 988017703 </a>
+				</td>
+				<td>
+					Video Controller
+				</td>
+				<td>
+					Dell/Wyse KVS Controller
+					<br>Video Controller for McDonalds that connects to the network via cat5 and a monitor via VGA to show orders on the line. Used in most installs.
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<h3>&nbsp; KFC</h3>
+	<input oninput="w3.filterHTML('.kfc', '.itemk', this.value)" placeholder="Search KFC......">
+	<br>
+	&nbsp;
+	<table class="kfc">
+		<tbody>
+			<tr class="header" style="font-weight:bold;">
+				<td style="width:100px;">
+				Part Number
+				</td>
+				<td style="width:50px;">
+				Type
+				</td>
+				<td style="width:300px;">
+				Description
+				</td>
+			</tr>
+			<tr class="itemk">
+				<td>
+					<a href="red-panda.jpg" target="blank"> M3701-02R </a>
+				</td>
+				<td>
+					Monitor
+				</td>
+				<td>
+					17" Flat Panel Monitor 
+					<br>17" ViewSonic monitor that is used as the display for orders on the line and at the Drive Thru register.
+				</td>
+			</tr>
+			<tr class="itemk">
+				<td>
+					<a href="red-panda.jpg" target="blank"> K3701 </a>
+				</td>
+				<td>
+					Video Bracket
+				</td>
+				<td>
+					Video Monitor Bracket KFC
+					<br>Also known as an All-in-One mount. L-shaped brackets that can be used as a wall mount or attach to the packline.
+				</td>
+			</tr>
+			<tr class="itemk">
+				<td>
+					<a href="red-panda.jpg" target="blank"> K8963-77 </a>
+				</td>
+				<td>
+					Accessory
+				</td>
+				<td>
+					ES7K Biometric Bracket
+					<br>Add on to 7000 registers to hold biometric readers (K89692R). 
+				</td>
+			</tr>
+			<tr class="itemk">
+				<td>
+					<a href="red-panda.jpg" target="blank"> K3889 </a>
+				</td>
+				<td>
+					Video Bracket
+				</td>
+				<td>
+					Ceiling Mount Bracket
+					<br>Bracket that hangs from a 2x4 in the ceiling by a U-bolt to hold video displays. Has a flat panel to attach to monitors. Unusable in stores with hard ceilings.
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<h3>&nbsp; Brink</h3>	
+	<input oninput="w3.filterHTML('.bp', '.itemb', this.value)" placeholder="Search Brink......">
+	<br>
+	&nbsp;
+	<table class="bp">
+		<tbody>
+			<tr class="header" style="font-weight:bold;">
+				<td style="width:100px;">
+				Part Number
+				</td>
+				<td style="width:50px;">
+				Type
+				</td>
+				<td style="width:300px;">
+				Description
+				</td>
+			</tr>
+			<tr class="itemb">
+				<td>
+					<a href="red-panda.jpg" target="blank"> K2359 </a>
+				</td>
+				<td>
+					Cash drawer
+				</td>
+				<td>
+					Brink MS Cash DWR TI
+					<br>Cash drawer used in Brink installs. Compadible with ES8100 registers.
+				</td>
+			</tr>
+			<tr class="itemb">
+				<td>
+					<a href="red-panda.jpg" target="blank"> M8983S </a>
+				</td>
+				<td>
+					Tablet
+				</td>
+				<td>
+					PAR Tablet w/ Hand Strap 
+					<br>Tablet to go along with Brink installation instead of having a BOC. Primarly used in Five Guys.
+				</td>
+			</tr>
+			<tr class="itemb">
+				<td>
+					<a href="red-panda.jpg" target="blank"> M4009 </a>
+				</td>
+				<td>
+					Accessory
+				</td>
+				<td>
+					Router AER1600 All In One
+					<br>Router used in Brink installs to connect the store to the BrinkPOS Cloud.
+				</td>
+			</tr>
+			<tr class="itemb">
+				<td>
+					<a href="red-panda.jpg" target="blank"> K4709-4550 </a>
+				</td>
+				<td>
+					Video Controller
+				</td>
+				<td>
+					KVS Controller - FLY 
+					<br>Fly model of KVS controller used in Brink installs. Connects to the network via cat5 and a monitor via VGA to show active orders.
+				</td>
+			</tr>
+	</table>
+	
+	
+	</body>
+	<footer>
+		<br><br><br><br><br><br>
+	</footer>
+	
+</html>
